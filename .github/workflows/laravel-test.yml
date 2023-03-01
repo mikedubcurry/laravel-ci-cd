@@ -3,7 +3,8 @@ name: Laravel Test
 on:
   push:
     branches: [ main, staging ]
-  pull_request: [ main, staging ]
+  pull_request:
+    branches: [ main, staging ]
 
 jobs:
   laravel-tests:
