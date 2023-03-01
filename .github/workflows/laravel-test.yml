@@ -30,9 +30,9 @@ jobs:
         npm run production
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       env:
-      DB_CONNECTION: sqlite
-      DB_DATABASE: database/database.sqlite
-      CACHE_DRIVER: array
-      SESSION_DRIVER: array
-      QUEUE_DRIVER: sync
+        DB_CONNECTION: sqlite
+        DB_DATABASE: database/database.sqlite
+        CACHE_DRIVER: array
+        SESSION_DRIVER: array
+        QUEUE_DRIVER: sync
       run: vendor/bin/phpunit
